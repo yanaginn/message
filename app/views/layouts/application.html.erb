@@ -11,6 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <ul>
+        <li><%= link_to "図書登録", new_book_path %></li>
+        <li><%= link_to "図書一覧", books_path %></li>
+      </ul>
+    </header>
+    <hr>
+    <div class="main">
+      <%= yield %>
+    </div>
+    <hr>
+    <footer>
+      <p>© 2019 Copyright reserved rails Library</p>
+    </footer>
+
   </body>
 </html>
